@@ -2,62 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cakes delivery</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-<header class="header">
-    <nav class="header_nav">
-        <ul class="header_list">
-            <div class="div_logocake">
-                <img src="cake-slice%201.png" alt="logocake" class="logocake">
-                <p class="logocake_text">Вкусный тортик</p>
+<section class="container">
+    <header class="header">
+        <nav class="header_nav">
+            <div class="logo_container">
+                <div class="logo_image_container">
+                    <img src="assets/images/cake_slice.svg" alt="logo" class="logo_image">
+                </div>
+                <p class="logo_text">Вкусный тортик</p>
             </div>
-            <li><a href="#!" class="home">Главная</a></li>
-            <li><a href="#!">Меню</a></li>
-            <li><a href="#!">О нас</a></li>
-            <li><a href="#!">Контакты</a></li>
-            <button class="basket"><img src="shopping-cart%201.png" alt="cart" class="img_basket"></button>
-        </ul>
-    </nav>
-    <div class="header_yummy">
-        <div class="yummy">
-            <h1>
-                Вкуснейшие торты<br>на заказ
-            </h1>
-            <p>
-                У нас вы можете выбрать<br>подходящий для любого человека торт,<br>на любой вкус и цвет и для кого угодно.<br></br>Выбирай!
-            </p>
-            <button type="button" class="button_choose">Выбрать торт</button>
-        </div>
-        <div class="header_div">
-            <img src="bigcake.png" alt="bigcake" class="bigcake">
-        </div>
-    </div>
-    <div class = "hits">
-        <button type="button" class="button_left"><img src="Vector%203.png"  alt="left" class="arrow_left"></button>
-        <div class="div_cake">
-            <p>Хит №1 <img src="Vector%202.png" alt="arrow" class="arrow"></p>
-
-            <img src="cake1.png" alt="cake1" class="img_cake">
-        </div>
-        <div class="div_cake">
-            <p>Хит №2<img src="Vector%202.png" alt="arrow" class="arrow"></p>
-            <img src="cake2.png" alt="cake2" class="img_cake">
-        </div>
-        <div class="div_cake">
-            <p>Хит №3<img src="Vector%202.png" alt="arrow" class="arrow"></p>
-            <img src="cake3.png" alt="cake3" class="img_cake">
-        </div>
-        <div class="div_cake">
-            <p>Хит №4<img src="Vector%202.png" alt="arrow" class="arrow"></p>
-            <img src="cake4.png" alt="cake4" class="img_cake">
-        </div>
-        <button type="button" class="button_right"><img src="Vector%203.png" alt="right" class="arrow_right"></button>
-    </div>
-</header>
+            <ul class="nav_container">
+                <li><a href="#!" class="home line">Главная</a></li>
+                <li><a href="#!" class="line">Меню</a></li>
+                <li><a href="#!" class="line">О нас</a></li>
+                <li><a href="#!" class="line">Контакты</a></li>
+                <li>
+                    <button class="basket">
+                        <img src="assets/images/shopping-cart.png" alt="cart" class="img_basket">
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <aside class="cakes">
+        <img src="assets/images/cake_2.png" alt="cake_2" class="cake_2">
+        <img src="assets/images/cake_1.png" alt="cake_1" class="cake_1">
+    </aside>
+        <article>
+            <div class="header_container">
+                <div class="article_container">
+                    <h1>
+                        Вкуснейшие торты<br>на заказ
+                    </h1>
+                    <p class="header_information">
+                        У нас вы можете выбрать<br>подходящий для любого человека <br>торт, на любой вкус и цвет и для <br>кого
+                        угодно. Выбирай!
+                    </p>
+                    <button type="button" class="button_choose">Выбрать торт</button>
+                </div>
+                <div class="ellipse">
+                    <img src="assets/images/cake_image.svg" alt="big_cake" class="cake_image">
+                </div>
+            </div>
+            <h1 class="hit">Хиты недели</h1>
+            <div class="hits">
+                <button type="button" class="button_left"><img src="assets/images/white_arrow.svg" alt="left"
+                                                               class="arrow_left"></button>
+                <div class="div_cake">
+                    <button type="button" class="hit_button"><p>Хит №1 </p><img src="assets/images/pink_arrow.svg"
+                                                                                alt="arrow"></button>
+                    <img src="assets/images/cake1.png" alt="cake1" class="img_cake">
+                </div>
+                <div class="div_cake">
+                    <button type="button" class="hit_button"><p>Хит №2 </p><img src="assets/images/pink_arrow.svg" alt="arrow">
+                    </button>
+                    <img src="assets/images/cake2.png" alt="cake2" class="img_cake">
+                </div>
+                <div class="div_cake">
+                    <button type="button" class="hit_button"><p>Хит №3 </p><img src="assets/images/pink_arrow.svg"
+                                                                                alt="arrow"></button>
+                    <img src="assets/images/cake3.png" alt="cake3" class="img_cake">
+                </div>
+                <div class="div_cake">
+                    <button type="button" class="hit_button"><p>Хит №4 </p><img src="assets/images/pink_arrow.svg"
+                                                                                alt="arrow"></button>
+                    <img src="assets/images/cake4.png" alt="cake4" class="img_cake">
+                </div>
+                <button type="button" class="button_right"><img src="assets/images/white_arrow.svg" alt="right"
+                                                                class="arrow_right"></button>
+            </div>
+        </article>
+</section>
 </body>
 </html>
