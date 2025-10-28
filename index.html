@@ -12,18 +12,18 @@
         <nav class="header_nav">
             <div class="logo_container">
                 <div class="logo_image_container">
-                    <img src="assets/images/cake_slice.svg" alt="logo" class="logo_image">
+                    <img src="assets/images/vectors/cake_slice.svg" alt="logo" class="logo_image">
                 </div>
                 <p class="logo_text">Вкусный тортик</p>
             </div>
             <ul class="nav_container">
-                <li><a href="#!" class="home line">Главная</a></li>
-                <li><a href="#!" class="line">Меню</a></li>
-                <li><a href="#!" class="line">О нас</a></li>
-                <li><a href="#!" class="line">Контакты</a></li>
+                <li><a>Главная</a></li>
+                <li><a onclick="scrollToElement('choose_cakes')">Меню</a></li>
+                <li><a onclick="scrollToElement('information_id')">О нас</a></li>
+                <li><a onclick="scrollToElement('order_id')">Контакты</a></li>
                 <li>
-                    <button class="basket">
-                        <img src="assets/images/shopping-cart.png" alt="cart" class="img_basket">
+                    <button class="basket basket_dark">
+                        <img src="assets/images/vectors/shopping_cart.png" alt=_cart" class="img_basket_header">
                     </button>
                 </li>
             </ul>
@@ -33,50 +33,1541 @@
         <img src="assets/images/cake_2.png" alt="cake_2" class="cake_2">
         <img src="assets/images/cake_1.png" alt="cake_1" class="cake_1">
     </aside>
-        <article>
-            <div class="header_container">
-                <div class="article_container">
-                    <h1>
-                        Вкуснейшие торты<br>на заказ
-                    </h1>
-                    <p class="header_information">
-                        У нас вы можете выбрать<br>подходящий для любого человека <br>торт, на любой вкус и цвет и для <br>кого
-                        угодно. Выбирай!
-                    </p>
-                    <button type="button" class="button_choose">Выбрать торт</button>
+    <article>
+        <div class="header_container">
+            <div class="article_container">
+                <h1>
+                    Вкуснейшие торты<br>на заказ
+                </h1>
+                <p class="header_information">
+                    У нас вы можете выбрать<br>подходящий для любого человека <br>торт, на любой вкус и цвет и для <br>кого
+                    угодно. Выбирай!
+                </p>
+                <button type="button" class="button_choose" onclick="scrollToElement('choose_cakes')">Выбрать торт</button>
+            </div>
+            <div class="ellipse">
+                <img src="assets/images/cake_image.svg" alt="big_cake" class="cake_image">
+            </div>
+        </div>
+        <h1 class="hit">Хиты недели</h1>
+        <div class="hits">
+            <button type="button" id="hit_btn_left" class="button_left"><img src="assets/images/vectors/white_arrow.svg" alt="left"
+                                                                             class="arrow_left"></button>
+            <div class="slider_header">
+                <div class="slider_line_header">
+                    <div class="div_cake">
+                        <button class="hit_button" onclick="scrollToElement('cake_for_girl2_id')">Хит №1</button>
+                        <img src="assets/images/for_girl/cake_for_girl2.svg" alt="cake1" class="img_cake">
+                    </div>
+                    <div class="div_cake">
+                        <button class="hit_button">Хит №2</button>
+                        <img src="assets/images/for_boy/cake_for_boy2.png" alt="cake2" class="img_cake">
+                    </div>
+                    <div class="div_cake">
+                        <button class="hit_button">Хит №3</button>
+                    <img src="assets/images/for_woman/cake_for_woman2.png" alt="cake3" class="img_cake">
                 </div>
-                <div class="ellipse">
-                    <img src="assets/images/cake_image.svg" alt="big_cake" class="cake_image">
+                    <div class="div_cake">
+                        <button class="hit_button">Хит №4</button>
+                        <img src="assets/images/for_man/cake_for_man1.png" alt="cake4" class="img_cake">
+                    </div>
+                    <div class="div_cake">
+                        <button class="hit_button">Хит №5</button>
+                        <img src="assets/images/wedding/wedding2.png" alt="cake3" class="img_cake">
+                    </div>
+                    <div class="div_cake">
+                        <button class="hit_button">Хит №6</button>
+                        <img src="assets/images/thema/thema1.png" alt="cake3" class="img_cake">
+                    </div>
                 </div>
             </div>
-            <h1 class="hit">Хиты недели</h1>
-            <div class="hits">
-                <button type="button" class="button_left"><img src="assets/images/white_arrow.svg" alt="left"
-                                                               class="arrow_left"></button>
-                <div class="div_cake">
-                    <button type="button" class="hit_button"><p>Хит №1 </p><img src="assets/images/pink_arrow.svg"
-                                                                                alt="arrow"></button>
-                    <img src="assets/images/cake1.png" alt="cake1" class="img_cake">
-                </div>
-                <div class="div_cake">
-                    <button type="button" class="hit_button"><p>Хит №2 </p><img src="assets/images/pink_arrow.svg" alt="arrow">
-                    </button>
-                    <img src="assets/images/cake2.png" alt="cake2" class="img_cake">
-                </div>
-                <div class="div_cake">
-                    <button type="button" class="hit_button"><p>Хит №3 </p><img src="assets/images/pink_arrow.svg"
-                                                                                alt="arrow"></button>
-                    <img src="assets/images/cake3.png" alt="cake3" class="img_cake">
-                </div>
-                <div class="div_cake">
-                    <button type="button" class="hit_button"><p>Хит №4 </p><img src="assets/images/pink_arrow.svg"
-                                                                                alt="arrow"></button>
-                    <img src="assets/images/cake4.png" alt="cake4" class="img_cake">
-                </div>
-                <button type="button" class="button_right"><img src="assets/images/white_arrow.svg" alt="right"
-                                                                class="arrow_right"></button>
-            </div>
-        </article>
+            <button type="button" id="hit_btn_right" class="button_right"><img src="assets/images/vectors/white_arrow.svg" alt="right"
+                                                                               class="arrow_right"></button>
+        </div>
+    </article>
 </section>
+<section class="choose_section" id="choose_cakes">
+    <div class="overlay js-overlay js-close-cart">
+
+    </div>
+    <div class="cart js-cart">
+        <span class="close js-close-modal js-close-cart"><img src="assets/images/vectors/pink_cross.png" alt="pink_cross" class="close_cross"></span>
+        <div class="cart-container column aic">
+            <div class="cart-empty-container column jcc aic js-cart-empty-container">
+                <img src="assets/images/cat.png" alt="cat" class="cat">
+                <p class="nothing">Тут ничего нет</p>
+            </div>
+            <div class="cart-order-container column js-cart-order-container">
+                <form class="column aic">
+                    <ul class="cart-list column js-cart-list">
+                    </ul>
+                    <div class="cart-total-container">
+                        <h3 class="title">Итого</h3>
+                        <div>
+                            <span class="total-price js-cart-total-price">14 000</span>
+                            <span class="rouble">BYN</span>
+                        </div>
+                    </div>
+                    <div class="cart-btn">
+                        <button type="submit" class="btn-order">Оформить заказ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <div class="choose_container">
+        <h1 class="choose_h1">Выбери свой<br>наивкуснейший торт</h1>
+        <ul class="menu_list" >
+            <li>
+                <button type="button" class="menu_button" data-menu-name="for_girls">Девочке</button>
+            </li>
+            <li>
+                <button type="button" class="menu_button" data-menu-name="for_boy">Мальчику</button>
+            </li>
+            <li>
+                <button type="button" class="menu_button" data-menu-name="for_woman">Женщине</button>
+            </li>
+            <li>
+                <button type="button" class="menu_button" data-menu-name="for_man">Мужчине</button>
+            </li>
+            <li>
+                <button type="button" class="menu_button" data-menu-name="wedding">Свадебные</button>
+            </li>
+            <li>
+                <button type="button" class="menu_button" data-menu-name="thema">Тематические</button>
+            </li>
+        </ul>
+    </div>
+    <div class="js-products-list">
+        <div class="menu_of_cakes for_girls">
+            <button class="button_left"><img src="assets/images/vectors/white_arrow.svg" alt="left" class="arrow_left">
+            </button>
+            <div class="slider">
+                <div class="slider_line">
+                    <div class="menu_cake js-product">
+                        <div class="information_container">
+                            <p>От 2 кг</p>
+                            <button type="button" onclick="toggleOverlay(this)" class="question"><img src="assets/images/vectors/question.svg" alt="question">
+                            </button>
+                        </div>
+                        <img src="assets/images/for_girl/cake_for_girl3.svg" alt="cake_for_girl3" class="cake_for_girl3 js-image-card">
+                        <div class="order_container">
+                            <div>
+                            <span class="js-prise-card">90</span>
+                            <span class="rouble">BYN</span>
+                            </div>
+                            <div class="order_basket">
+                                <button type="button" class="shopping-cart_menu js-buy-button">
+                                    <img src="assets/images/vectors/shopping_cart.png" alt="shopping_cart" class="img_basket">
+                                </button>
+                                <p class="order_line">Заказать</p>
+                            </div>
+                        </div>
+                        <div class="recipe_container">
+                            <p class="recipe_hdr js-title-card">"Тропический рай"</p>
+                            <p class="ingredients">Ингредиенты:</p>
+                            <ul class="recipe_list">
+                                <li>Ванильный бисквит</li>
+                                <li>Манговый сироп</li>
+                                <li>Кокосовый крем</li>
+                                <li>Ананасы</li>
+                                <li>Вафельная бумага</li>
+                                <li>Пряники</li>
+                                <li>Пищевые красители</li>
+                            </ul>
+                            <button onclick="toggleOverlay(this)" class="recipe_btn"><img src="assets/images/vectors/pink_arrow.svg" alt="pink_arrow"></button>
+                        </div>
+                    </div>
+                    <div class="menu_cake js-product">
+                        <div class="information_container">
+                            <p>От 2 кг</p>
+                            <button onclick="toggleOverlay(this)" class="question"><img src="assets/images/vectors/question.svg" alt="question">
+                            </button>
+                        </div>
+                        <img src="assets/images/for_girl/cake_for_girl2.svg" alt="cake_for_girl2" id="cake_for_girl2_id" class="cake_for_girl2 js-image-card">
+                        <div class="order_container">
+                            <div>
+                            <span class="js-prise-card">60</span>
+                            <span class="rouble">BYN</span>
+                            </div>
+                            <div class="order_basket">
+                                <button type="button" class="shopping-cart_menu js-buy-button">
+                                    <img src="assets/images/vectors/shopping_cart.png" alt="shopping_cart" class="img_basket">
+                                </button>
+                                <p class="order_line">Заказать</p>
+                            </div>
+                        </div>
+                        <div class="recipe_container">
+                            <p class="recipe_hdr js-title-card">"Клубничка"</p>
+                            <p class="ingredients">Ингредиенты:</p>
+                            <ul class="recipe_list">
+                                <li>Бисквит "Красный бархат"</li>
+                                <li>Ванильный крем</li>
+                                <li>Крем-чиз</li>
+                                <li>Пряники</li>
+                                <li>Леденцы</li>
+                                <li>Кокосовая стружка</li>
+                                <li>Вафельные бусины</li>
+                            </ul>
+                            <button onclick="toggleOverlay(this)" class="recipe_btn"><img src="assets/images/vectors/pink_arrow.svg" alt="pink_arrow"></button>
+                        </div>
+                    </div>
+                    <div class="menu_cake js-product">
+                        <div class="information_container">
+                            <p>От 2 кг</p>
+                            <button onclick="toggleOverlay(this)" class="question"><img src="assets/images/vectors/question.svg" alt="question">
+                            </button>
+                        </div>
+                        <img src="assets/images/for_girl/cake_for_girl1.svg" alt="cake_for_girl1" class="cake_for_girl1 js-image-card">
+                        <div class="order_container">
+                            <div>
+                            <span class="js-prise-card">75</span>
+                            <span class="rouble">BYN</span>
+                            </div>
+                            <div class="order_basket">
+                                <button type="button" class="shopping-cart_menu js-buy-button">
+                                    <img src="assets/images/vectors/shopping_cart.png" alt="shopping_cart" class="img_basket">
+                                </button>
+                                <p class="order_line">Заказать</p>
+                            </div>
+                        </div>
+                        <div class="recipe_container">
+                            <p class="recipe_hdr js-title-card">"Мышка"</p>
+                            <p class="ingredients">Ингредиенты:</p>
+                            <ul class="recipe_list">
+                                <li>Ванильный бисквит</li>
+                                <li>Ванильный крем</li>
+                                <li>Черника</li>
+                                <li>Вафельная бумага</li>
+                                <li>Пряники</li>
+                                <li>Пищевые красители</li>
+                                <li>Фигурка из мастики</li>
+                            </ul>
+                            <button onclick="toggleOverlay(this)" class="recipe_btn"><img src="assets/images/vectors/pink_arrow.svg" alt="pink_arrow"></button>
+                        </div>
+                    </div>
+                    <div class="menu_cake js-product">
+                        <div class="information_container">
+                            <p>От 2 кг</p>
+                            <button onclick="toggleOverlay(this)" class="question"><img src="assets/images/vectors/question.svg" alt="question">
+                            </button>
+                        </div>
+                        <img src="assets/images/for_girl/cake_for_girl4.png" alt="cake_for_girl4" class="cake_for_girl4 js-image-card">
+                        <div class="order_container">
+                            <div>
+                            <span class="js-prise-card">55</span>
+                            <span class="rouble">BYN</span>
+                            </div>
+                            <div class="order_basket">
+                                <button type="button" class="shopping-cart_menu js-buy-button">
+                                    <img src="assets/images/vectors/shopping_cart.png" alt="shopping_cart" class="img_basket">
+                                </button>
+                                <p class="order_line">Заказать</p>
+                            </div>
+                        </div>
+                        <div class="recipe_container">
+                            <p class="recipe_hdr js-title-card">"Лавандовый"</p>
+                            <p class="ingredients">Ингредиенты:</p>
+                            <ul class="recipe_list">
+                                <li>Черничный бисквит</li>
+                                <li>Крем с лавандой</li>
+                                <li>Малиновый джем</li>
+                                <li>Вафельная бумага</li>
+                                <li>Шоколадные плитки</li>
+                                <li>Посыпка из золотой фольги</li>
+                                <li>Пищевые красители</li>
+                                <li>Фигурные пряники</li>
+                                <li>Маленькие маршмеллоу</li>
+                            </ul>
+                            <button onclick="toggleOverlay(this)" class="recipe_btn"><img src="assets/images/vectors/pink_arrow.svg" alt="pink_arrow"></button>
+                        </div>
+                    </div>
+                    <div class="menu_cake js-product">
+                        <div class="information_container">
+                            <p>От 2 кг</p>
+                            <button onclick="toggleOverlay(this)" class="question"><img src="assets/images/vectors/question.svg" alt="question">
+                            </button>
+                        </div>
+                        <img src="assets/images/for_girl/cake_for_girl5.png" alt="cake_for_girl5" class="cake_for_girl5 js-image-card">
+                        <div class="order_container">
+                            <div>
+                            <span class="js-prise-card">30</span>
+                            <span class="rouble">BYN</span>
+                            </div>
+                            <div class="order_basket">
+                                <button type="button" class="shopping-cart_menu js-buy-button">
+                                    <img src="assets/images/vectors/shopping_cart.png" alt="shopping_cart" class="img_basket">
+                                </button>
+                                <p class="order_line">Заказать</p>
+                            </div>
+                        </div>
+                        <div class="recipe_container">
+                            <p class="recipe_hdr js-title-card">"Мимими"</p>
+                            <p class="ingredients">Ингредиенты:</p>
+                            <ul class="recipe_list">
+                                <li>Ванильный бисквит</li>
+                                <li>Крем с маскарпоне</li>
+                                <li>Клубничный конфитюр</li>
+                                <li>Профитроли с заварным кремом</li>
+                                <li>Клубника</li>
+                                <li>Глазурь</li>
+                                <li>Пищевые красители</li>
+                                <li>Сахарная пудра</li>
+                                <li>Маленькие маршмеллоу</li>
+                            </ul>
+                            <button onclick="toggleOverlay(this)" class="recipe_btn"><img src="assets/images/vectors/pink_arrow.svg" alt="pink_arrow"></button>
+                        </div>
+                    </div>
+                    <div class="menu_cake js-product">
+                        <div class="information_container">
+                            <p>От 2 кг</p>
+                            <button onclick="toggleOverlay(this)" class="question"><img src="assets/images/vectors/question.svg" alt="question">
+                            </button>
+                        </div>
+                        <img src="assets/images/for_girl/cake_for_girl6.png" alt="cake_for_girl6" class="cake_for_girl6 js-image-card">
+                        <div class="order_container">
+                            <div>
+                            <span class="js-prise-card">65</span>
+                            <span class="rouble">BYN</span>
+                            </div>
+                            <div class="order_basket">
+                                <button type="button" class="shopping-cart_menu js-buy-button">
+                                    <img src="assets/images/vectors/shopping_cart.png" alt="shopping_cart" class="img_basket">
+                                </button>
+                                <p class="order_line">Заказать</p>
+                            </div>
+                        </div>
+                        <div class="recipe_container">
+                            <p class="recipe_hdr js-title-card">"Лунный зайка"</p>
+                            <p class="ingredients">Ингредиенты:</p>
+                            <ul class="recipe_list">
+                                <li>Ванильный бисквит</li>
+                                <li>Сливочно-клубничный крем</li>
+                                <li>Фондант для фигурок</li>
+                                <li>Крем-чиз</li>
+                                <li>Шоколадные шарики и жемчужины</li>
+                                <li>Звёздочки из сахарной мастики</li>
+                                <li>Пищевые красители</li>
+                            </ul>
+                            <button onclick="toggleOverlay(this)" class="recipe_btn"><img src="assets/images/vectors/pink_arrow.svg" alt="pink_arrow"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="left_btn" class="button_right"><img src="assets/images/vectors/white_arrow.svg" alt="right" class="arrow_right">
+            </button>
+        </div>
+        <div class="menu_of_cakes for_boy d-none">
+            <button class="button_left"><img src="assets/images/vectors/white_arrow.svg" alt="left" class="arrow_left">
+            </button>
+            <div class="slider">
+                <div class="slider_line">
+                    <div class="menu_cake js-product">
+                        <div class="information_container">
+                            <p>От 2 кг</p>
+                            <button onclick="toggleOverlay(this)" class="question"><img src="assets/images/vectors/question.svg" alt="question"></button>
+                        </div>
+                        <img src="assets/images/for_boy/cake_for_boy1.png" alt="cake_for_boy1" class="cake_for_boy1 js-image-card">
+                        <div class="order_container">
+                            <div>
+                            <span class="js-prise-card">90</span>
+                            <span class="rouble">BYN</span>
+                            </div>
+                            <div class="order_basket">
+                                <button type="button" class="shopping-cart_menu js-buy-button">
+                                    <img src="assets/images/vectors/shopping_cart.png" alt="shopping_cart" class="img_basket">
+                                </button>
+                                <p class="order_line">Заказать</p>
+                            </div>
+                        </div>
+                        <div class="recipe_container">
+                            <p class="recipe_hdr js-title-card">"Подводный мир"</p>
+                            <p class="ingredients">Ингредиенты:</p>
+                            <ul class="recipe_list">
+                                <li>Бисквит с голубикой и лимоном</li>
+                                <li>Крем на сливках</li>
+                                <li>Фондант для фигурок</li>
+                                <li>Белый шоколад</li>
+                                <li>Карамельная фигурка</li>
+                                <li>Пищевые жемчужины и сахарные шарики</li>
+                                <li>Мастика</li>
+                                <li>Песочное печенье</li>
+                                <li>Пищевые красители</li>
+                            </ul>
+                            <button onclick="toggleOverlay(this)" class="recipe_btn"><img src="assets/images/vectors/pink_arrow.svg" alt="pink_arrow"></button>
+                        </div>
+                    </div>
+                    <div class="menu_cake js-product">
+                        <div class="information_container">
+                            <p>От 2 кг</p>
+                            <button onclick="toggleOverlay(this)" class="question"><img src="assets/images/vectors/question.svg" alt="question"></button>
+                        </div>
+                        <img src="assets/images/for_boy/cake_for_boy2.png" alt="cake_for_boy2" class="cake_for_boy2 js-image-card">
+                        <div class="order_container">
+                            <div>
+                            <span class="js-prise-card">75</span>
+                            <span class="rouble">BYN</span>
+                            </div>
+                            <div class="order_basket">
+                                <button type="button" class="shopping-cart_menu js-buy-button">
+                                    <img src="assets/images/vectors/shopping_cart.png" alt="shopping_cart" class="img_basket">
+                                </button>
+                                <p class="order_line">Заказать</p>
+                            </div>
+                        </div>
+                        <div class="recipe_container">
+                            <p class="recipe_hdr js-title-card">"Подводный мир"</p>
+                            <p class="ingredients">Ингредиенты:</p>
+                            <ul class="recipe_list">
+                                <li>Бисквит с голубикой и лимоном</li>
+                                <li>Крем на сливках</li>
+                                <li>Фондант для фигурок</li>
+                                <li>Белый шоколад</li>
+                                <li>Карамельная фигурка</li>
+                                <li>Пищевые жемчужины и сахарные шарики</li>
+                                <li>Мастика</li>
+                                <li>Песочное печенье</li>
+                                <li>Пищевые красители</li>
+                            </ul>
+                            <button onclick="toggleOverlay(this)" class="recipe_btn"><img src="assets/images/vectors/pink_arrow.svg" alt="pink_arrow"></button>
+                        </div>
+                    </div>
+                    <div class="menu_cake js-product">
+                        <div class="information_container">
+                            <p>От 2 кг</p>
+                            <button onclick="toggleOverlay(this)" class="question"><img src="assets/images/vectors/question.svg" alt="question"></button>
+                        </div>
+                        <img src="assets/images/for_boy/cake_for_boy3.png" alt="cake_for_boy3" class="cake_for_boy3 js-image-card">
+                        <div class="order_container">
+                            <div>
+                            <span class="js-prise-card">70</span>
+                            <span class="rouble">BYN</span>
+                            </div>
+                            <div class="order_basket">
+                                <button type="button" class="shopping-cart_menu js-buy-button">
+                                    <img src="assets/images/vectors/shopping_cart.png" alt="shopping_cart" class="img_basket">
+                                </button>
+                                <p class="order_line">Заказать</p>
+                            </div>
+                        </div>
+                        <div class="recipe_container">
+                            <p class="recipe_hdr js-title-card">"Подводный мир"</p>
+                            <p class="ingredients">Ингредиенты:</p>
+                            <ul class="recipe_list">
+                                <li>Бисквит с голубикой и лимоном</li>
+                                <li>Крем на сливках</li>
+                                <li>Фондант для фигурок</li>
+                                <li>Белый шоколад</li>
+                                <li>Карамельная фигурка</li>
+                                <li>Пищевые жемчужины и сахарные шарики</li>
+                                <li>Мастика</li>
+                                <li>Песочное печенье</li>
+                                <li>Пищевые красители</li>
+                            </ul>
+                            <button onclick="toggleOverlay(this)" class="recipe_btn"><img src="assets/images/vectors/pink_arrow.svg" alt="pink_arrow"></button>
+                        </div>
+                    </div>
+                    <div class="menu_cake js-product">
+                        <div class="information_container">
+                            <p>От 2 кг</p>
+                            <button onclick="toggleOverlay(this)" class="question"><img src="assets/images/vectors/question.svg" alt="question"></button>
+                        </div>
+                        <img src="assets/images/for_boy/cake_for_boy4.png" alt="cake_for_boy4" class="cake_for_boy4 js-image-card">
+                        <div class="order_container">
+                            <div>
+                            <span class="js-prise-card">80</span>
+                            <span class="rouble">BYN</span>
+                            </div>
+                            <div class="order_basket">
+                                <button type="button" class="shopping-cart_menu js-buy-button">
+                                    <img src="assets/images/vectors/shopping_cart.png" alt="shopping_cart" class="img_basket">
+                                </button>
+                                <p class="order_line">Заказать</p>
+                            </div>
+                        </div>
+                        <div class="recipe_container">
+                            <p class="recipe_hdr js-title-card">"Подводный мир"</p>
+                            <p class="ingredients">Ингредиенты:</p>
+                            <ul class="recipe_list">
+                                <li>Бисквит с голубикой и лимоном</li>
+                                <li>Крем на сливках</li>
+                                <li>Фондант для фигурок</li>
+                                <li>Белый шоколад</li>
+                                <li>Карамельная фигурка</li>
+                                <li>Пищевые жемчужины и сахарные шарики</li>
+                                <li>Мастика</li>
+                                <li>Песочное печенье</li>
+                                <li>Пищевые красители</li>
+                            </ul>
+                            <button onclick="toggleOverlay(this)" class="recipe_btn"><img src="assets/images/vectors/pink_arrow.svg" alt="pink_arrow"></button>
+                        </div>
+                    </div>
+                    <div class="menu_cake js-product">
+                        <div class="information_container">
+                            <p>От 2 кг</p>
+                            <button onclick="toggleOverlay(this)" class="question"><img src="assets/images/vectors/question.svg" alt="question"></button>
+                        </div>
+                        <img src="assets/images/for_boy/cake_for_boy5.png" alt="cake_for_boy5" class="cake_for_boy5 js-image-card">
+                        <div class="order_container">
+                            <div>
+                            <span class="js-prise-card">45</span>
+                            <span class="rouble">BYN</span>
+                            </div>
+                            <div class="order_basket">
+                                <button type="button" class="shopping-cart_menu js-buy-button">
+                                    <img src="assets/images/vectors/shopping_cart.png" alt="shopping_cart" class="img_basket">
+                                </button>
+                                <p class="order_line">Заказать</p>
+                            </div>
+                        </div>
+                        <div class="recipe_container">
+                            <p class="recipe_hdr js-title-card">"Подводный мир"</p>
+                            <p class="ingredients">Ингредиенты:</p>
+                            <ul class="recipe_list">
+                                <li>Бисквит с голубикой и лимоном</li>
+                                <li>Крем на сливках</li>
+                                <li>Фондант для фигурок</li>
+                                <li>Белый шоколад</li>
+                                <li>Карамельная фигурка</li>
+                                <li>Пищевые жемчужины и сахарные шарики</li>
+                                <li>Мастика</li>
+                                <li>Песочное печенье</li>
+                                <li>Пищевые красители</li>
+                            </ul>
+                            <button onclick="toggleOverlay(this)" class="recipe_btn"><img src="assets/images/vectors/pink_arrow.svg" alt="pink_arrow"></button>
+                        </div>
+                    </div>
+                    <div class="menu_cake js-product">
+                        <div class="information_container">
+                            <p>От 2 кг</p>
+                            <button onclick="toggleOverlay(this)" class="question"><img src="assets/images/vectors/question.svg" alt="question"></button>
+                        </div>
+                        <img src="assets/images/for_boy/cake_for_boy6.png" alt="cake_for_boy6" class="cake_for_boy6 js-image-card">
+                        <div class="order_container">
+                            <div>
+                            <span class="js-prise-card">85</span>
+                            <span class="rouble">BYN</span>
+                            </div>
+                            <div class="order_basket">
+                                <button type="button" class="shopping-cart_menu js-buy-button">
+                                    <img src="assets/images/vectors/shopping_cart.png" alt="shopping_cart" class="img_basket">
+                                </button>
+                                <p class="order_line">Заказать</p>
+                            </div>
+                        </div>
+                        <div class="recipe_container">
+                            <p class="recipe_hdr js-title-card">"Подводный мир"</p>
+                            <p class="ingredients">Ингредиенты:</p>
+                            <ul class="recipe_list">
+                                <li>Бисквит с голубикой и лимоном</li>
+                                <li>Крем на сливках</li>
+                                <li>Фондант для фигурок</li>
+                                <li>Белый шоколад</li>
+                                <li>Карамельная фигурка</li>
+                                <li>Пищевые жемчужины и сахарные шарики</li>
+                                <li>Мастика</li>
+                                <li>Песочное печенье</li>
+                                <li>Пищевые красители</li>
+                            </ul>
+                            <button onclick="toggleOverlay(this)" class="recipe_btn"><img src="assets/images/vectors/pink_arrow.svg" alt="pink_arrow"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="button_right"><img src="assets/images/vectors/white_arrow.svg" alt="right" class="arrow_right">
+            </button>
+        </div>
+        <div class="menu_of_cakes for_woman d-none">
+            <button type="button" class="button_left"><img src="assets/images/vectors/white_arrow.svg" alt="left" class="arrow_left">
+            </button>
+            <div class="slider">
+                <div class="slider_line">
+                    <div class="menu_cake js-product">
+                        <div class="information_container">
+                            <p>От 2 кг</p>
+                            <button onclick="toggleOverlay(this)" class="question"><img src="assets/images/vectors/question.svg" alt="question"></button>
+                        </div>
+                        <img src="assets/images/for_woman/cake_for_woman1.png" alt="cake_for_woman1" class="cake_for_woman1 js-image-card">
+                        <div class="order_container">
+                            <div>
+                            <span class="js-prise-card">60</span>
+                            <span class="rouble">BYN</span>
+                            </div>
+                            <div class="order_basket">
+                                <button type="button" class="shopping-cart_menu js-buy-button">
+                                    <img src="assets/images/vectors/shopping_cart.png" alt="shopping_cart" class="img_basket">
+                                </button>
+                                <p class="order_line">Заказать</p>
+                            </div>
+                        </div>
+                        <div class="recipe_container">
+                            <p class="recipe_hdr js-title-card">"Подводный мир"</p>
+                            <p class="ingredients">Ингредиенты:</p>
+                            <ul class="recipe_list">
+                                <li>Бисквит с голубикой и лимоном</li>
+                                <li>Крем на сливках</li>
+                                <li>Фондант для фигурок</li>
+                                <li>Белый шоколад</li>
+                                <li>Карамельная фигурка</li>
+                                <li>Пищевые жемчужины и сахарные шарики</li>
+                                <li>Мастика</li>
+                                <li>Песочное печенье</li>
+                                <li>Пищевые красители</li>
+                            </ul>
+                            <button onclick="toggleOverlay(this)" class="recipe_btn"><img src="assets/images/vectors/pink_arrow.svg" alt="pink_arrow"></button>
+                        </div>
+                    </div>
+                    <div class="menu_cake js-product">
+                        <div class="information_container">
+                            <p>От 2 кг</p>
+                            <button onclick="toggleOverlay(this)" class="question"><img src="assets/images/vectors/question.svg" alt="question"></button>
+                        </div>
+                        <img src="assets/images/for_woman/cake_for_woman2.png" alt="cake_for_woman2" class="cake_for_woman2 js-image-card">
+                        <div class="order_container">
+                            <div>
+                            <span class="js-prise-card">50</span>
+                            <span class="rouble">BYN</span>
+                            </div>
+                            <div class="order_basket">
+                                <button type="button" class="shopping-cart_menu js-buy-button">
+                                    <img src="assets/images/vectors/shopping_cart.png" alt="shopping_cart" class="img_basket">
+                                </button>
+                                <p class="order_line">Заказать</p>
+                            </div>
+                        </div>
+                        <div class="recipe_container">
+                            <p class="recipe_hdr js-title-card">"Подводный мир"</p>
+                            <p class="ingredients">Ингредиенты:</p>
+                            <ul class="recipe_list">
+                                <li>Бисквит с голубикой и лимоном</li>
+                                <li>Крем на сливках</li>
+                                <li>Фондант для фигурок</li>
+                                <li>Белый шоколад</li>
+                                <li>Карамельная фигурка</li>
+                                <li>Пищевые жемчужины и сахарные шарики</li>
+                                <li>Мастика</li>
+                                <li>Песочное печенье</li>
+                                <li>Пищевые красители</li>
+                            </ul>
+                            <button onclick="toggleOverlay(this)" class="recipe_btn"><img src="assets/images/vectors/pink_arrow.svg" alt="pink_arrow"></button>
+                        </div>
+                    </div>
+                    <div class="menu_cake js-product">
+                        <div class="information_container">
+                            <p>От 2 кг</p>
+                            <button onclick="toggleOverlay(this)" class="question"><img src="assets/images/vectors/question.svg" alt="question"></button>
+                        </div>
+                        <img src="assets/images/for_woman/cake_for_woman3.png" alt="cake_for_woman3" class="cake_for_woman3 js-image-card">
+                        <div class="order_container">
+                            <div>
+                            <span class="js-prise-card">95</span>
+                            <span class="rouble">BYN</span>
+                            </div>
+                            <div class="order_basket">
+                                <button type="button" class="shopping-cart_menu js-buy-button">
+                                    <img src="assets/images/vectors/shopping_cart.png" alt="shopping_cart" class="img_basket">
+                                </button>
+                                <p class="order_line">Заказать</p>
+                            </div>
+                        </div>
+                        <div class="recipe_container">
+                            <p class="recipe_hdr js-title-card">"Подводный мир"</p>
+                            <p class="ingredients">Ингредиенты:</p>
+                            <ul class="recipe_list">
+                                <li>Бисквит с голубикой и лимоном</li>
+                                <li>Крем на сливках</li>
+                                <li>Фондант для фигурок</li>
+                                <li>Белый шоколад</li>
+                                <li>Карамельная фигурка</li>
+                                <li>Пищевые жемчужины и сахарные шарики</li>
+                                <li>Мастика</li>
+                                <li>Песочное печенье</li>
+                                <li>Пищевые красители</li>
+                            </ul>
+                            <button onclick="toggleOverlay(this)" class="recipe_btn"><img src="assets/images/vectors/pink_arrow.svg" alt="pink_arrow"></button>
+                        </div>
+                    </div>
+                    <div class="menu_cake js-product">
+                        <div class="information_container">
+                            <p>От 2 кг</p>
+                            <button onclick="toggleOverlay(this)" class="question"><img src="assets/images/vectors/question.svg" alt="question"></button>
+                        </div>
+                        <img src="assets/images/for_woman/cake_for_woman4.png" alt="cake_for_woman4" class="cake_for_woman4 js-image-card">
+                        <div class="order_container">
+                            <div>
+                            <span class="js-prise-card">85</span>
+                            <span class="rouble">BYN</span>
+                            </div>
+                            <div class="order_basket">
+                                <button type="button" class="shopping-cart_menu js-buy-button">
+                                    <img src="assets/images/vectors/shopping_cart.png" alt="shopping_cart" class="img_basket">
+                                </button>
+                                <p class="order_line">Заказать</p>
+                            </div>
+                        </div>
+                        <div class="recipe_container">
+                            <p class="recipe_hdr js-title-card">"Подводный мир"</p>
+                            <p class="ingredients">Ингредиенты:</p>
+                            <ul class="recipe_list">
+                                <li>Бисквит с голубикой и лимоном</li>
+                                <li>Крем на сливках</li>
+                                <li>Фондант для фигурок</li>
+                                <li>Белый шоколад</li>
+                                <li>Карамельная фигурка</li>
+                                <li>Пищевые жемчужины и сахарные шарики</li>
+                                <li>Мастика</li>
+                                <li>Песочное печенье</li>
+                                <li>Пищевые красители</li>
+                            </ul>
+                            <button onclick="toggleOverlay(this)" class="recipe_btn"><img src="assets/images/vectors/pink_arrow.svg" alt="pink_arrow"></button>
+                        </div>
+                    </div>
+                    <div class="menu_cake js-product">
+                        <div class="information_container">
+                            <p>От 2 кг</p>
+                            <button onclick="toggleOverlay(this)" class="question"><img src="assets/images/vectors/question.svg" alt="question"></button>
+                        </div>
+                        <img src="assets/images/for_woman/cake_for_woman5.png" alt="cake_for_woman5" class="cake_for_woman5 js-image-card">
+                        <div class="order_container">
+                            <div>
+                            <span class="js-prise-card">70</span>
+                            <span class="rouble">BYN</span>
+                            </div>
+                            <div class="order_basket">
+                                <button type="button" class="shopping-cart_menu js-buy-button">
+                                    <img src="assets/images/vectors/shopping_cart.png" alt="shopping_cart" class="img_basket">
+                                </button>
+                                <p class="order_line">Заказать</p>
+                            </div>
+                        </div>
+                        <div class="recipe_container">
+                            <p class="recipe_hdr js-title-card">"Подводный мир"</p>
+                            <p class="ingredients">Ингредиенты:</p>
+                            <ul class="recipe_list">
+                                <li>Бисквит с голубикой и лимоном</li>
+                                <li>Крем на сливках</li>
+                                <li>Фондант для фигурок</li>
+                                <li>Белый шоколад</li>
+                                <li>Карамельная фигурка</li>
+                                <li>Пищевые жемчужины и сахарные шарики</li>
+                                <li>Мастика</li>
+                                <li>Песочное печенье</li>
+                                <li>Пищевые красители</li>
+                            </ul>
+                            <button onclick="toggleOverlay(this)" class="recipe_btn"><img src="assets/images/vectors/pink_arrow.svg" alt="pink_arrow"></button>
+                        </div>
+                    </div>
+                    <div class="menu_cake js-product">
+                        <div class="information_container">
+                            <p>От 2 кг</p>
+                            <button onclick="toggleOverlay(this)" class="question"><img src="assets/images/vectors/question.svg" alt="question"></button>
+                        </div>
+                        <img src="assets/images/for_woman/cake_for_woman6.png" alt="cake_for_woman6" class="cake_for_woman6 js-image-card">
+                        <div class="order_container">
+                            <div>
+                            <span class="js-prise-card">80</span>
+                            <span class="rouble">BYN</span>
+                            </div>
+                            <div class="order_basket">
+                                <button type="button" class="shopping-cart_menu js-buy-button">
+                                    <img src="assets/images/vectors/shopping_cart.png" alt="shopping_cart" class="img_basket">
+                                </button>
+                                <p class="order_line">Заказать</p>
+                            </div>
+                        </div>
+                        <div class="recipe_container">
+                            <p class="recipe_hdr js-title-card">"Подводный мир"</p>
+                            <p class="ingredients">Ингредиенты:</p>
+                            <ul class="recipe_list">
+                                <li>Бисквит с голубикой и лимоном</li>
+                                <li>Крем на сливках</li>
+                                <li>Фондант для фигурок</li>
+                                <li>Белый шоколад</li>
+                                <li>Карамельная фигурка</li>
+                                <li>Пищевые жемчужины и сахарные шарики</li>
+                                <li>Мастика</li>
+                                <li>Песочное печенье</li>
+                                <li>Пищевые красители</li>
+                            </ul>
+                            <button onclick="toggleOverlay(this)" class="recipe_btn"><img src="assets/images/vectors/pink_arrow.svg" alt="pink_arrow"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="button_right"><img src="assets/images/vectors/white_arrow.svg" alt="right" class="arrow_right">
+            </button>
+        </div>
+        <div class="menu_of_cakes for_man d-none">
+            <button type="button" class="button_left"><img src="assets/images/vectors/white_arrow.svg" alt="left" class="arrow_left">
+            </button>
+            <div class="slider">
+                <div class="slider_line">
+                    <div class="menu_cake js-product">
+                        <div class="information_container">
+                            <p>От 2 кг</p>
+                            <button onclick="toggleOverlay(this)" class="question"><img src="assets/images/vectors/question.svg" alt="question"></button>
+                        </div>
+                        <img src="assets/images/for_man/cake_for_man2.png" alt="cake_for_man2" class="cake_for_man2 js-image-card">
+                        <div class="order_container">
+                            <div>
+                            <span class="js-prise-card">50</span>
+                            <span class="rouble">BYN</span>
+                            </div>
+                            <div class="order_basket">
+                                <button type="button" class="shopping-cart_menu js-buy-button">
+                                    <img src="assets/images/vectors/shopping_cart.png" alt="shopping_cart" class="img_basket">
+                                </button>
+                                <p class="order_line">Заказать</p>
+                            </div>
+                        </div>
+                        <div class="recipe_container">
+                            <p class="recipe_hdr">"Двойной Шоколадный Восторг"</p>
+                            <p class="ingredients">Ингредиенты:</p>
+                            <ul class="recipe_list">
+                                <li>Шоколадный бисквит</li>
+                                <li>Какао-порошок</li>
+                                <li>Сахар</li>
+                                <li>Яйца</li>
+                                <li>Мука</li>
+                                <li>Разрыхлитель теста</li>
+                                <li>Сливочное масло</li>
+                                <li>Шоколадный ганаш</li>
+                                <li>Oreo</li>
+                            </ul>
+                            <button onclick="toggleOverlay(this)" class="recipe_btn"><img src="assets/images/vectors/pink_arrow.svg" alt="pink_arrow"></button>
+                        </div>
+                    </div>
+                    <div class="menu_cake js-product">
+                        <div class="information_container">
+                            <p>От 2 кг</p>
+                            <button onclick="toggleOverlay(this)" class="question"><img src="assets/images/vectors/question.svg" alt="question"></button>
+                        </div>
+                        <img src="assets/images/for_man/cake_for_man1.png" alt="cake_for_man1" class="cake_for_man1 js-image-card">
+                        <div class="order_container">
+                            <div>
+                            <span class="js-prise-card">80</span>
+                            <span class="rouble">BYN</span>
+                            </div>
+                            <div class="order_basket">
+                                <button type="button" class="shopping-cart_menu js-buy-button">
+                                    <img src="assets/images/vectors/shopping_cart.png" alt="shopping_cart" class="img_basket">
+                                </button>
+                                <p class="order_line">Заказать</p>
+                            </div>
+                        </div>
+                        <div class="recipe_container">
+                            <p class="recipe_hdr js-title-card">"Подводный мир"</p>
+                            <p class="ingredients">Ингредиенты:</p>
+                            <ul class="recipe_list">
+                                <li>Бисквит с голубикой и лимоном</li>
+                                <li>Крем на сливках</li>
+                                <li>Фондант для фигурок</li>
+                                <li>Белый шоколад</li>
+                                <li>Карамельная фигурка</li>
+                                <li>Пищевые жемчужины и сахарные шарики</li>
+                                <li>Мастика</li>
+                                <li>Песочное печенье</li>
+                                <li>Пищевые красители</li>
+                            </ul>
+                            <button onclick="toggleOverlay(this)" class="recipe_btn"><img src="assets/images/vectors/pink_arrow.svg" alt="pink_arrow"></button>
+                        </div>
+                    </div>
+                    <div class="menu_cake js-product">
+                        <div class="information_container">
+                            <p>От 2 кг</p>
+                            <button onclick="toggleOverlay(this)" class="question"><img src="assets/images/vectors/question.svg" alt="question"></button>
+                        </div>
+                        <img src="assets/images/for_man/cake_for_man3.png" alt="cake_for_man3" class="cake_for_man3 js-image-card">
+                        <div class="order_container">
+                            <div>
+                            <span class="js-prise-card">70</span>
+                            <span class="rouble">BYN</span>
+                            </div>
+                            <div class="order_basket">
+                                <button type="button" class="shopping-cart_menu js-buy-button">
+                                    <img src="assets/images/vectors/shopping_cart.png" alt="shopping_cart" class="img_basket">
+                                </button>
+                                <p class="order_line">Заказать</p>
+                            </div>
+                        </div>
+                        <div class="recipe_container">
+                            <p class="recipe_hdr js-title-card">"Подводный мир"</p>
+                            <p class="ingredients">Ингредиенты:</p>
+                            <ul class="recipe_list">
+                                <li>Бисквит с голубикой и лимоном</li>
+                                <li>Крем на сливках</li>
+                                <li>Фондант для фигурок</li>
+                                <li>Белый шоколад</li>
+                                <li>Карамельная фигурка</li>
+                                <li>Пищевые жемчужины и сахарные шарики</li>
+                                <li>Мастика</li>
+                                <li>Песочное печенье</li>
+                                <li>Пищевые красители</li>
+                            </ul>
+                            <button onclick="toggleOverlay(this)" class="recipe_btn"><img src="assets/images/vectors/pink_arrow.svg" alt="pink_arrow"></button>
+                        </div>
+                    </div>
+                    <div class="menu_cake js-product">
+                        <div class="information_container">
+                            <p>От 2 кг</p>
+                            <button onclick="toggleOverlay(this)" class="question"><img src="assets/images/vectors/question.svg" alt="question"></button>
+                        </div>
+                        <img src="assets/images/for_man/cake_for_man4.png" alt="cake_for_man4" class="cake_for_man4 js-image-card">
+                        <div class="order_container">
+                            <div>
+                            <span class="js-prise-card">65</span>
+                            <span class="rouble">BYN</span>
+                            </div>
+                            <div class="order_basket">
+                                <button type="button" class="shopping-cart_menu js-buy-button">
+                                    <img src="assets/images/vectors/shopping_cart.png" alt="shopping_cart" class="img_basket">
+                                </button>
+                                <p class="order_line">Заказать</p>
+                            </div>
+                        </div>
+                        <div class="recipe_container">
+                            <p class="recipe_hdr js-title-card">"Подводный мир"</p>
+                            <p class="ingredients">Ингредиенты:</p>
+                            <ul class="recipe_list">
+                                <li>Бисквит с голубикой и лимоном</li>
+                                <li>Крем на сливках</li>
+                                <li>Фондант для фигурок</li>
+                                <li>Белый шоколад</li>
+                                <li>Карамельная фигурка</li>
+                                <li>Пищевые жемчужины и сахарные шарики</li>
+                                <li>Мастика</li>
+                                <li>Песочное печенье</li>
+                                <li>Пищевые красители</li>
+                            </ul>
+                            <button onclick="toggleOverlay(this)" class="recipe_btn"><img src="assets/images/vectors/pink_arrow.svg" alt="pink_arrow"></button>
+                        </div>
+                    </div>
+                    <div class="menu_cake js-product">
+                        <div class="information_container">
+                            <p>От 2 кг</p>
+                            <button onclick="toggleOverlay(this)" class="question"><img src="assets/images/vectors/question.svg" alt="question"></button>
+                        </div>
+                        <img src="assets/images/for_man/cake_for_man5.png" alt="cake_for_man5" class="cake_for_man5 js-image-card">
+                        <div class="order_container">
+                            <div>
+                            <span class="js-prise-card">90</span>
+                            <span class="rouble">BYN</span>
+                            </div>
+                            <div class="order_basket">
+                                <button type="button" class="shopping-cart_menu js-buy-button">
+                                    <img src="assets/images/vectors/shopping_cart.png" alt="shopping_cart" class="img_basket">
+                                </button>
+                                <p class="order_line">Заказать</p>
+                            </div>
+                        </div>
+                        <div class="recipe_container">
+                            <p class="recipe_hdr js-title-card">"Подводный мир"</p>
+                            <p class="ingredients">Ингредиенты:</p>
+                            <ul class="recipe_list">
+                                <li>Бисквит с голубикой и лимоном</li>
+                                <li>Крем на сливках</li>
+                                <li>Фондант для фигурок</li>
+                                <li>Белый шоколад</li>
+                                <li>Карамельная фигурка</li>
+                                <li>Пищевые жемчужины и сахарные шарики</li>
+                                <li>Мастика</li>
+                                <li>Песочное печенье</li>
+                                <li>Пищевые красители</li>
+                            </ul>
+                            <button onclick="toggleOverlay(this)" class="recipe_btn"><img src="assets/images/vectors/pink_arrow.svg" alt="pink_arrow"></button>
+                        </div>
+                    </div>
+                    <div class="menu_cake js-product">
+                        <div class="information_container">
+                            <p>От 2 кг</p>
+                            <button onclick="toggleOverlay(this)" class="question"><img src="assets/images/vectors/question.svg" alt="question"></button>
+                        </div>
+                        <img src="assets/images/for_man/cake_for_man6.png" alt="cake_for_man6" class="cake_for_man6 js-image-card">
+                        <div class="order_container">
+                            <div>
+                            <span class="js-prise-card">50</span>
+                            <span class="rouble">BYN</span>
+                            </div>
+                            <div class="order_basket">
+                                <button type="button" class="shopping-cart_menu js-buy-button">
+                                    <img src="assets/images/vectors/shopping_cart.png" alt="shopping_cart" class="img_basket">
+                                </button>
+                                <p class="order_line">Заказать</p>
+                            </div>
+                        </div>
+                        <div class="recipe_container">
+                            <p class="recipe_hdr js-title-card">"Подводный мир"</p>
+                            <p class="ingredients">Ингредиенты:</p>
+                            <ul class="recipe_list">
+                                <li>Бисквит с голубикой и лимоном</li>
+                                <li>Крем на сливках</li>
+                                <li>Фондант для фигурок</li>
+                                <li>Белый шоколад</li>
+                                <li>Карамельная фигурка</li>
+                                <li>Пищевые жемчужины и сахарные шарики</li>
+                                <li>Мастика</li>
+                                <li>Песочное печенье</li>
+                                <li>Пищевые красители</li>
+                            </ul>
+                            <button onclick="toggleOverlay(this)" class="recipe_btn"><img src="assets/images/vectors/pink_arrow.svg" alt="pink_arrow"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="button_right"><img src="assets/images/vectors/white_arrow.svg" alt="right" class="arrow_right">
+            </button>
+        </div>
+        <div class="menu_of_cakes wedding d-none">
+            <button type="button" class="button_left"><img src="assets/images/vectors/white_arrow.svg" alt="left" class="arrow_left">
+            </button>
+            <div class="slider">
+                <div class="slider_line">
+                    <div class="menu_cake js-product">
+                        <div class="information_container">
+                            <p>От 2 кг</p>
+                            <button onclick="toggleOverlay(this)" class="question"><img src="assets/images/vectors/question.svg" alt="question"></button>
+                        </div>
+                        <img src="assets/images/wedding/wedding1.png" alt="wedding1" class="wedding1 js-image-card">
+                        <div class="order_container">
+                            <div>
+                            <span class="js-prise-card">100</span>
+                            <span class="rouble">BYN</span>
+                            </div>
+                            <div class="order_basket">
+                                <button type="button" class="shopping-cart_menu js-buy-button">
+                                    <img src="assets/images/vectors/shopping_cart.png" alt="shopping_cart" class="img_basket">
+                                </button>
+                                <p class="order_line">Заказать</p>
+                            </div>
+                        </div>
+                        <div class="recipe_container">
+                            <p class="recipe_hdr js-title-card">"Подводный мир"</p>
+                            <p class="ingredients">Ингредиенты:</p>
+                            <ul class="recipe_list">
+                                <li>Бисквит с голубикой и лимоном</li>
+                                <li>Крем на сливках</li>
+                                <li>Фондант для фигурок</li>
+                                <li>Белый шоколад</li>
+                                <li>Карамельная фигурка</li>
+                                <li>Пищевые жемчужины и сахарные шарики</li>
+                                <li>Мастика</li>
+                                <li>Песочное печенье</li>
+                                <li>Пищевые красители</li>
+                            </ul>
+                            <button onclick="toggleOverlay(this)" class="recipe_btn"><img src="assets/images/vectors/pink_arrow.svg" alt="pink_arrow"></button>
+                        </div>
+                    </div>
+                    <div class="menu_cake js-product">
+                        <div class="information_container">
+                            <p>От 2 кг</p>
+                            <button onclick="toggleOverlay(this)" class="question"><img src="assets/images/vectors/question.svg" alt="question"></button>
+                        </div>
+                        <img src="assets/images/wedding/wedding2.png" alt="wedding2" class="wedding2 js-image-card">
+                        <div class="order_container">
+                            <div>
+                            <span class="js-prise-card">150</span>
+                            <span class="rouble">BYN</span>
+                            </div>
+                            <div class="order_basket">
+                                <button type="button" class="shopping-cart_menu js-buy-button">
+                                    <img src="assets/images/vectors/shopping_cart.png" alt="shopping_cart" class="img_basket">
+                                </button>
+                                <p class="order_line">Заказать</p>
+                            </div>
+                        </div>
+                        <div class="recipe_container">
+                            <p class="recipe_hdr js-title-card">"Подводный мир"</p>
+                            <p class="ingredients">Ингредиенты:</p>
+                            <ul class="recipe_list">
+                                <li>Бисквит с голубикой и лимоном</li>
+                                <li>Крем на сливках</li>
+                                <li>Фондант для фигурок</li>
+                                <li>Белый шоколад</li>
+                                <li>Карамельная фигурка</li>
+                                <li>Пищевые жемчужины и сахарные шарики</li>
+                                <li>Мастика</li>
+                                <li>Песочное печенье</li>
+                                <li>Пищевые красители</li>
+                            </ul>
+                            <button onclick="toggleOverlay(this)" class="recipe_btn"><img src="assets/images/vectors/pink_arrow.svg" alt="pink_arrow"></button>
+                        </div>
+                    </div>
+                    <div class="menu_cake js-product">
+                        <div class="information_container">
+                            <p>От 2 кг</p>
+                            <button onclick="toggleOverlay(this)" class="question"><img src="assets/images/vectors/question.svg" alt="question"></button>
+                        </div>
+                        <img src="assets/images/wedding/wedding3.png" alt="wedding3" class="wedding3 js-image-card">
+                        <div class="order_container">
+                            <div>
+                            <span class="js-prise-card">120</span>
+                            <span class="rouble">BYN</span>
+                            </div>
+                            <div class="order_basket">
+                                <button type="button" class="shopping-cart_menu js-buy-button">
+                                    <img src="assets/images/vectors/shopping_cart.png" alt="shopping_cart" class="img_basket">
+                                </button>
+                                <p class="order_line">Заказать</p>
+                            </div>
+                        </div>
+                        <div class="recipe_container">
+                            <p class="recipe_hdr js-title-card">"Подводный мир"</p>
+                            <p class="ingredients">Ингредиенты:</p>
+                            <ul class="recipe_list">
+                                <li>Бисквит с голубикой и лимоном</li>
+                                <li>Крем на сливках</li>
+                                <li>Фондант для фигурок</li>
+                                <li>Белый шоколад</li>
+                                <li>Карамельная фигурка</li>
+                                <li>Пищевые жемчужины и сахарные шарики</li>
+                                <li>Мастика</li>
+                                <li>Песочное печенье</li>
+                                <li>Пищевые красители</li>
+                            </ul>
+                            <button onclick="toggleOverlay(this)" class="recipe_btn"><img src="assets/images/vectors/pink_arrow.svg" alt="pink_arrow"></button>
+                        </div>
+                    </div>
+                    <div class="menu_cake js-product">
+                        <div class="information_container">
+                            <p>От 2 кг</p>
+                            <button onclick="toggleOverlay(this)" class="question"><img src="assets/images/vectors/question.svg" alt="question"></button>
+                        </div>
+                        <img src="assets/images/wedding/wedding4.png" alt="wedding4" class="wedding4 js-image-card">
+                        <div class="order_container">
+                            <div>
+                            <span class="js-prise-card">100</span>
+                            <span class="rouble">BYN</span>
+                            </div>
+                            <div class="order_basket">
+                                <button type="button" class="shopping-cart_menu js-buy-button">
+                                    <img src="assets/images/vectors/shopping_cart.png" alt="shopping_cart" class="img_basket">
+                                </button>
+                                <p class="order_line">Заказать</p>
+                            </div>
+                        </div>
+                        <div class="recipe_container">
+                            <p class="recipe_hdr js-title-card">"Подводный мир"</p>
+                            <p class="ingredients">Ингредиенты:</p>
+                            <ul class="recipe_list">
+                                <li>Бисквит с голубикой и лимоном</li>
+                                <li>Крем на сливках</li>
+                                <li>Фондант для фигурок</li>
+                                <li>Белый шоколад</li>
+                                <li>Карамельная фигурка</li>
+                                <li>Пищевые жемчужины и сахарные шарики</li>
+                                <li>Мастика</li>
+                                <li>Песочное печенье</li>
+                                <li>Пищевые красители</li>
+                            </ul>
+                            <button onclick="toggleOverlay(this)" class="recipe_btn"><img src="assets/images/vectors/pink_arrow.svg" alt="pink_arrow"></button>
+                        </div>
+                    </div>
+                    <div class="menu_cake js-product">
+                        <div class="information_container">
+                            <p>От 2 кг</p>
+                            <button onclick="toggleOverlay(this)" class="question"><img src="assets/images/vectors/question.svg" alt="question"></button>
+                        </div>
+                        <img src="assets/images/wedding/wedding5.png" alt="wedding5" class="wedding5 js-image-card">
+                        <div class="order_container">
+                            <div>
+                            <span class="js-prise-card">90</span>
+                            <span class="rouble">BYN</span>
+                            </div>
+                            <div class="order_basket">
+                                <button type="button" class="shopping-cart_menu js-buy-button">
+                                    <img src="assets/images/vectors/shopping_cart.png" alt="shopping_cart" class="img_basket">
+                                </button>
+                                <p class="order_line">Заказать</p>
+                            </div>
+                        </div>
+                        <div class="recipe_container">
+                            <p class="recipe_hdr js-title-card">"Подводный мир"</p>
+                            <p class="ingredients">Ингредиенты:</p>
+                            <ul class="recipe_list">
+                                <li>Бисквит с голубикой и лимоном</li>
+                                <li>Крем на сливках</li>
+                                <li>Фондант для фигурок</li>
+                                <li>Белый шоколад</li>
+                                <li>Карамельная фигурка</li>
+                                <li>Пищевые жемчужины и сахарные шарики</li>
+                                <li>Мастика</li>
+                                <li>Песочное печенье</li>
+                                <li>Пищевые красители</li>
+                            </ul>
+                            <button onclick="toggleOverlay(this)" class="recipe_btn"><img src="assets/images/vectors/pink_arrow.svg" alt="pink_arrow"></button>
+                        </div>
+                    </div>
+                    <div class="menu_cake js-product">
+                        <div class="information_container">
+                            <p>От 2 кг</p>
+                            <button onclick="toggleOverlay(this)" class="question"><img src="assets/images/vectors/question.svg" alt="question"></button>
+                        </div>
+                        <img src="assets/images/wedding/wedding6.png" alt="wedding6" class="wedding6 js-image-card">
+                        <div class="order_container">
+                            <div>
+                            <span class="js-prise-card">130</span>
+                            <span class="rouble">BYN</span>
+                            </div>
+                            <div class="order_basket">
+                                <button type="button" class="shopping-cart_menu js-buy-button">
+                                    <img src="assets/images/vectors/shopping_cart.png" alt="shopping_cart" class="img_basket">
+                                </button>
+                                <p class="order_line">Заказать</p>
+                            </div>
+                        </div>
+                        <div class="recipe_container">
+                            <p class="recipe_hdr js-title-card">"Подводный мир"</p>
+                            <p class="ingredients">Ингредиенты:</p>
+                            <ul class="recipe_list">
+                                <li>Бисквит с голубикой и лимоном</li>
+                                <li>Крем на сливках</li>
+                                <li>Фондант для фигурок</li>
+                                <li>Белый шоколад</li>
+                                <li>Карамельная фигурка</li>
+                                <li>Пищевые жемчужины и сахарные шарики</li>
+                                <li>Мастика</li>
+                                <li>Песочное печенье</li>
+                                <li>Пищевые красители</li>
+                            </ul>
+                            <button onclick="toggleOverlay(this)" class="recipe_btn"><img src="assets/images/vectors/pink_arrow.svg" alt="pink_arrow"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="button_right"><img src="assets/images/vectors/white_arrow.svg" alt="right" class="arrow_right">
+            </button>
+        </div>
+        <div class="menu_of_cakes thema d-none">
+            <button type="button" class="button_left"><img src="assets/images/vectors/white_arrow.svg" alt="left" class="arrow_left">
+            </button>
+            <div class="slider">
+                <div class="slider_line">
+                    <div class="menu_cake js-product">
+                        <div class="information_container">
+                            <p>От 2 кг</p>
+                            <button onclick="toggleOverlay(this)" class="question"><img src="assets/images/vectors/question.svg" alt="question"></button>
+                        </div>
+                        <img src="assets/images/thema/thema2.png" alt="thema2" class="thema2 js-image-card">
+                        <div class="order_container">
+                            <div>
+                            <span class="js-prise-card">90</span>
+                            <span class="rouble">BYN</span>
+                            </div>
+                            <div class="order_basket">
+                                <button type="button" class="shopping-cart_menu js-buy-button">
+                                    <img src="assets/images/vectors/shopping_cart.png" alt="shopping_cart" class="img_basket">
+                                </button>
+                                <p class="order_line">Заказать</p>
+                            </div>
+                        </div>
+                        <div class="recipe_container">
+                            <p class="recipe_hdr js-title-card">"Подводный мир"</p>
+                            <p class="ingredients">Ингредиенты:</p>
+                            <ul class="recipe_list">
+                                <li>Бисквит с голубикой и лимоном</li>
+                                <li>Крем на сливках</li>
+                                <li>Фондант для фигурок</li>
+                                <li>Белый шоколад</li>
+                                <li>Карамельная фигурка</li>
+                                <li>Пищевые жемчужины и сахарные шарики</li>
+                                <li>Мастика</li>
+                                <li>Песочное печенье</li>
+                                <li>Пищевые красители</li>
+                            </ul>
+                            <button onclick="toggleOverlay(this)" class="recipe_btn"><img src="assets/images/vectors/pink_arrow.svg" alt="pink_arrow"></button>
+                        </div>
+                    </div>
+                    <div class="menu_cake js-product">
+                        <div class="information_container">
+                            <p>От 2 кг</p>
+                            <button onclick="toggleOverlay(this)" class="question"><img src="assets/images/vectors/question.svg" alt="question"></button>
+                        </div>
+                        <img src="assets/images/thema/thema1.png" alt="thema1" class="thema1 js-image-card">
+                        <div class="order_container">
+                            <div>
+                            <span class="js-prise-card">65</span>
+                            <span class="rouble">BYN</span>
+                            </div>
+                            <div class="order_basket">
+                                <button type="button" class="shopping-cart_menu js-buy-button">
+                                    <img src="assets/images/vectors/shopping_cart.png" alt="shopping_cart" class="img_basket">
+                                </button>
+                                <p class="order_line">Заказать</p>
+                            </div>
+                        </div>
+                        <div class="recipe_container">
+                            <p class="recipe_hdr js-title-card">"Подводный мир"</p>
+                            <p class="ingredients">Ингредиенты:</p>
+                            <ul class="recipe_list">
+                                <li>Бисквит с голубикой и лимоном</li>
+                                <li>Крем на сливках</li>
+                                <li>Фондант для фигурок</li>
+                                <li>Белый шоколад</li>
+                                <li>Карамельная фигурка</li>
+                                <li>Пищевые жемчужины и сахарные шарики</li>
+                                <li>Мастика</li>
+                                <li>Песочное печенье</li>
+                                <li>Пищевые красители</li>
+                            </ul>
+                            <button onclick="toggleOverlay(this)" class="recipe_btn"><img src="assets/images/vectors/pink_arrow.svg" alt="pink_arrow"></button>
+                        </div>
+                    </div>
+                    <div class="menu_cake js-product">
+                        <div class="information_container">
+                            <p>От 2 кг</p>
+                            <button onclick="toggleOverlay(this)" class="question"><img src="assets/images/vectors/question.svg" alt="question"></button>
+                        </div>
+                        <img src="assets/images/thema/thema3.png" alt="thema3" class="thema3 js-image-card">
+                        <div class="order_container">
+                            <div>
+                            <span class="js-prise-card">75</span>
+                            <span class="rouble">BYN</span>
+                            </div>
+                            <div class="order_basket">
+                                <button type="button" class="shopping-cart_menu js-buy-button">
+                                    <img src="assets/images/vectors/shopping_cart.png" alt="shopping_cart" class="img_basket">
+                                </button>
+                                <p class="order_line">Заказать</p>
+                            </div>
+                        </div>
+                        <div class="recipe_container">
+                            <p class="recipe_hdr js-title-card">"Подводный мир"</p>
+                            <p class="ingredients">Ингредиенты:</p>
+                            <ul class="recipe_list">
+                                <li>Бисквит с голубикой и лимоном</li>
+                                <li>Крем на сливках</li>
+                                <li>Фондант для фигурок</li>
+                                <li>Белый шоколад</li>
+                                <li>Карамельная фигурка</li>
+                                <li>Пищевые жемчужины и сахарные шарики</li>
+                                <li>Мастика</li>
+                                <li>Песочное печенье</li>
+                                <li>Пищевые красители</li>
+                            </ul>
+                            <button onclick="toggleOverlay(this)" class="recipe_btn"><img src="assets/images/vectors/pink_arrow.svg" alt="pink_arrow"></button>
+                        </div>
+                    </div>
+                    <div class="menu_cake js-product">
+                        <div class="information_container">
+                            <p>От 2 кг</p>
+                            <button onclick="toggleOverlay(this)" class="question"><img src="assets/images/vectors/question.svg" alt="question"></button>
+                        </div>
+                        <img src="assets/images/thema/thema4.png" alt="thema4" class="thema4 js-image-card">
+                        <div class="order_container">
+                            <div>
+                            <span class="js-prise-card">85</span>
+                            <span class="rouble">BYN</span>
+                            </div>
+                            <div class="order_basket">
+                                <button type="button" class="shopping-cart_menu js-buy-button">
+                                    <img src="assets/images/vectors/shopping_cart.png" alt="shopping_cart" class="img_basket">
+                                </button>
+                                <p class="order_line">Заказать</p>
+                            </div>
+                        </div>
+                        <div class="recipe_container">
+                            <p class="recipe_hdr js-title-card">"Подводный мир"</p>
+                            <p class="ingredients">Ингредиенты:</p>
+                            <ul class="recipe_list">
+                                <li>Бисквит с голубикой и лимоном</li>
+                                <li>Крем на сливках</li>
+                                <li>Фондант для фигурок</li>
+                                <li>Белый шоколад</li>
+                                <li>Карамельная фигурка</li>
+                                <li>Пищевые жемчужины и сахарные шарики</li>
+                                <li>Мастика</li>
+                                <li>Песочное печенье</li>
+                                <li>Пищевые красители</li>
+                            </ul>
+                            <button onclick="toggleOverlay(this)" class="recipe_btn"><img src="assets/images/vectors/pink_arrow.svg" alt="pink_arrow"></button>
+                        </div>
+                    </div>
+                    <div class="menu_cake js-product">
+                        <div class="information_container">
+                            <p>От 2 кг</p>
+                            <button onclick="toggleOverlay(this)" class="question"><img src="assets/images/vectors/question.svg" alt="question"></button>
+                        </div>
+                        <img src="assets/images/thema/thema5.png" alt="thema5" class="thema5 js-image-card">
+                        <div class="order_container">
+                            <div>
+                            <span class="js-prise-card">65</span>
+                            <span class="rouble">BYN</span>
+                            </div>
+                            <div class="order_basket">
+                                <button type="button" class="shopping-cart_menu js-buy-button">
+                                    <img src="assets/images/vectors/shopping_cart.png" alt="shopping_cart" class="img_basket">
+                                </button>
+                                <p class="order_line">Заказать</p>
+                            </div>
+                        </div>
+                        <div class="recipe_container">
+                            <p class="recipe_hdr js-title-card">"Подводный мир"</p>
+                            <p class="ingredients">Ингредиенты:</p>
+                            <ul class="recipe_list">
+                                <li>Бисквит с голубикой и лимоном</li>
+                                <li>Крем на сливках</li>
+                                <li>Фондант для фигурок</li>
+                                <li>Белый шоколад</li>
+                                <li>Карамельная фигурка</li>
+                                <li>Пищевые жемчужины и сахарные шарики</li>
+                                <li>Мастика</li>
+                                <li>Песочное печенье</li>
+                                <li>Пищевые красители</li>
+                            </ul>
+                            <button onclick="toggleOverlay(this)" class="recipe_btn"><img src="assets/images/vectors/pink_arrow.svg" alt="pink_arrow"></button>
+                        </div>
+                    </div>
+                    <div class="menu_cake js-product">
+                        <div class="information_container">
+                            <p>От 2 кг</p>
+                            <button onclick="toggleOverlay(this)" class="question"><img src="assets/images/vectors/question.svg" alt="question"></button>
+                        </div>
+                        <img src="assets/images/thema/thema6.png" alt="thema6" class="thema6 js-image-card">
+                        <div class="order_container">
+                            <div>
+                            <span class="js-prise-card">80</span>
+                            <span class="rouble">BYN</span>
+                            </div>
+                            <div class="order_basket">
+                                <button type="button" class="shopping-cart_menu js-buy-button">
+                                    <img src="assets/images/vectors/shopping_cart.png" alt="shopping_cart" class="img_basket">
+                                </button>
+                                <p class="order_line">Заказать</p>
+                            </div>
+                        </div>
+                        <div class="recipe_container">
+                            <p class="recipe_hdr js-title-card">"Подводный мир"</p>
+                            <p class="ingredients">Ингредиенты:</p>
+                            <ul class="recipe_list">
+                                <li>Бисквит с голубикой и лимоном</li>
+                                <li>Крем на сливках</li>
+                                <li>Фондант для фигурок</li>
+                                <li>Белый шоколад</li>
+                                <li>Карамельная фигурка</li>
+                                <li>Пищевые жемчужины и сахарные шарики</li>
+                                <li>Мастика</li>
+                                <li>Песочное печенье</li>
+                                <li>Пищевые красители</li>
+                            </ul>
+                            <button onclick="toggleOverlay(this)" class="recipe_btn"><img src="assets/images/vectors/pink_arrow.svg" alt="pink_arrow"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="button_right"><img src="assets/images/vectors/white_arrow.svg" alt="right" class="arrow_right">
+            </button>
+        </div>
+    </div>
+</section>
+<section class="information_section" id="information_id">
+    <div>
+        <h1 class="steps_header">Почему вы можете<br>положиться на нас</h1>
+        <p class="explanation">Как у нас принимаются ваши заказы.</p>
+    </div>
+    <div class="information_header">
+        <div class="step_container">
+            <div class="circle">1</div>
+            <p class="step">Подтверждаем заказ</p>
+            <p>Принимаем ваш заказ и<br>перезваниваем вам для<br>уточнения желаемой<br>начинки торта.</p>
+        </div>
+        <img src="assets/images/vectors/big_arrow.svg" alt="big_arrow" class="big_arrow">
+        <div class="step_container">
+            <div class="circle">2</div>
+            <p class="step">Приготавливаем торт</p>
+            <p>Готовим торты полагаясь<br>на ваши предпочтения.</p>
+        </div>
+        <img src="assets/images/vectors/big_arrow.svg" alt="big_arrow" class="big_arrow">
+        <div class="step_container">
+            <div class="circle">3</div>
+            <p class="step">Отправляем заказ</p>
+            <p>Отправляем<br>приготовленную<br>продукцию курьером<br>или любым другим,<br>удобным способом.</p>
+        </div>
+        <img src="assets/images/vectors/big_arrow.svg" alt="big_arrow" class="big_arrow">
+        <div class="step_container">
+            <div class="circle">4</div>
+            <p class="step">Получение заказа</p>
+            <p>Вам сообщат о<br>готовности забрать<br>ваш заказ.</p>
+        </div>
+    </div>
+    <div class="photo_container">
+        <div class="div_photo">
+            <img src="assets/images/Ellipse_photo1.svg" alt="photo1" class="photo">
+            <p>Рада буду помочь в изготовлении<br>
+                красивого и вкусного торта для<br>
+                ваших любимых и родных людей,<br>
+                знакомых! Работаю в кондитерской<br>
+                сфере недавно, но количество<br>
+                кулинарных шедевров растёт с<br>
+                каждым днём, опыт нарабатывается<br>
+                ежедневно! Особенно приятно,<br>
+                когда Заказчик вновь обращается<br>
+                за Тортиком) Также рада буду помочь<br>
+                в продумывании деталей торта!<br>
+                Благодарю за внимание)
+            </p>
+        </div>
+        <div class="div_photo">
+            <img src="assets/images/Ellipse_photo2.svg" alt="photo2" class="photo">
+            <p>
+                "Здравствуйте! Я Соня - частный<br>
+                кондитер. Специализируюсь не<br>
+                только на тортах, но и на капкейках<br>
+                (пирожных), пряниках и леденцах.<br>
+                Готовлю так же сеты - т.е. когда<br>
+                к торту делаю так же капкейки,<br>
+                пряники или леденцы. По тортам<br>
+                делаю многие дизайны, могу<br>
+                выполнить торт по фото."
+            </p>
+        </div>
+        <div class="div_photo">
+            <img src="assets/images/Ellipse_photo3.svg" alt="photo3" class="photo">
+            <p>
+                Добиваюсь поставленной Вами<br>
+                задачи в создании десерта.<br>
+                Могу сделать любое желаемое<br>
+                оформление с красивым декором!<br>
+                Занимаюсь изготовлением тортиков<br>
+                и капкейков более девяти лет.<br>
+                Буду рада украсить Ваш праздник!
+            </p>
+        </div>
+    </div>
+</section>
+<section class="order_section" id="order_id">
+    <aside>
+        <img src="assets/images/cake_order_1.png" alt="cake_order_1" class="cake_order_1">
+        <img src="assets/images/cake_order_2.png" alt="cake_order_2" class="cake_order_2">
+    </aside>
+    <div>
+        <h1 class="order_header">Закажите торт</h1>
+        <p class="order_header_1">С индивидуальными<br>предпочтениями в начинке</p>
+        <p class="order_article">
+            Заполните эту форму и мы с вами<br>
+            свяжемся в ближайшее время и обсудим<br>
+            ваши желания и предпочтения к заказу.<br>
+            Так же проконсультируем вас, если<br>
+            потребуется.
+        </p>
+        <form action="" class="order_form">
+            <div class="form-example">
+                <input type="text" class="order_input" name="name" id="name" autocomplete="off"/>
+                <label for="name" class="order_label_1"><img src="assets/images/vectors/name.svg" alt="name" class="order_img_1"></label>
+            </div>
+            <div class="form-example">
+                <input type="tel" class="order_input" name="tel" id="tel" autocomplete="off"/>
+                <label for="tel" class="order_label_2"><img src="assets/images/vectors/phone.svg" alt="phone" class="order_img_2"></label>
+            </div>
+            <div class="form-example">
+                <input type="submit" class="send" value="Отправить заявку" />
+            </div>
+        </form>
+    </div>
+    <div class="cake_order">
+        <img src="assets/images/cake_order.png" alt="cake_order" class="cake_order_photo">
+    </div>
+</section>
+<script type="module" src="index.js"></script>
 </body>
 </html>

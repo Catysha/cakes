@@ -10,7 +10,10 @@ body{
     color: white;
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
+}
 
+::-webkit-scrollbar {
+    width: 0;
 }
 
 h1{
@@ -21,12 +24,18 @@ h1{
 a {
     color: white;
     text-decoration: none;
+    padding-right: 70px;
+}
+
+a:hover{
+    font-weight: 900;
 }
 
 /* Header */
 
 .container{
-    background: linear-gradient(to bottom left, var(--F86486), 80%, var(--white));
+    background: linear-gradient(to bottom left, var(--F86486), 70%, var(--F4B4C3));
+    position: relative;
 }
 
 header{
@@ -85,15 +94,22 @@ header{
     border: none;
     border-radius: 20px;
     background-color: var(--E71F4D);
-    box-shadow: 0px 5px 30px var(--ca7987);
+/*    box-shadow: 0px 5px 30px var(--ca7987);*/
     cursor: pointer;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.basket:hover{
+    background-color: var(--850924);
+    opacity: 0.9;
 }
 
 
-.img_basket {
-    width: 27px;
-    height: 27px;
-    padding-top: 8px;
+.img_basket_header {
+    width: 25px;
+    height: 25px;
+    padding-top: 10px;
 }
 
 article{
@@ -154,8 +170,7 @@ aside{
 
 .hit_button{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 83px;
     height: 20px;
@@ -163,9 +178,13 @@ aside{
     background: none;
     outline: none;
     cursor: pointer;
-    text-decoration: underline;
     color: var(--E71F4D);
     font-weight: 900;
+}
+
+.hit_button:hover{
+    text-decoration: underline;
+
 }
 
 .cake_1{
@@ -176,17 +195,6 @@ main{
     display: flex;
     justify-content: flex-start;
 }
-
-.line{
-    padding-right: 70px;
-
-}
-
-.home{
-    text-decoration: underline;
-    font-weight: 900;
-}
-
 
 .hits {
     display: flex;
@@ -200,11 +208,27 @@ main{
     font-weight: 900;
 }
 
+.slider_header{
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    overflow: hidden;
+}
+
+.slider_line_header{
+    display: flex;
+    flex-direction: row;
+    width: 1800px;
+    position: relative;
+    left: 0;
+    transition: left 0.5s ease;
+}
+
 .button_left{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 28px;
+    min-width: 28px;
     height: 28px;
     margin-top: auto;
     margin-bottom: auto;
@@ -220,7 +244,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 28px;
+    min-width: 28px;
     height: 28px;
     margin-top: auto;
     margin-bottom: auto;
@@ -255,16 +279,826 @@ main{
     align-items: center;
     width: 180px;
     height: 175px;
+    margin-left: 14px;
+    margin-right: 14px;
     border-radius: 20px;
     background-color: var(--FFDFE7);
-    box-shadow: 15px 15px 30px var(--b894a2);
+    transition: background 0.4s;
+/*    box-shadow: 15px 15px 30px var(--b894a2);*/
+}
+
+.div_cake:hover{
+    background: var(--FFC2D0);
 }
 
 .img_cake{
-    width: 148px;
+    width: 108px;
     height: 118px;
 
 }
+
+/* Menu */
+.choose_section{
+    background: var(--FFDFE7);
+}
+
+.choose_container{
+    width: 952px;
+    padding-left: 298px;
+    padding-top: 100px;
+}
+
+.choose_h1{
+    background: linear-gradient(var(--E71F4D),var(--F86486));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.menu_button{
+    width: 138px;
+    height: 38px;
+    margin-top: 40px;
+    border: none;
+    border-radius: 17px;
+    color: var(--white);
+    background: var(--F37C98);
+    box-shadow: 15px 10px 30px var(--b894a2);
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.4s;
+}
+
+.menu_button:hover{
+    background: linear-gradient(var(--E71F4D),var(--F86486));
+}
+
+.menu_of_cakes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    height: 310px;
+    padding-left: 200px;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    color: var(--E71F4D);
+    font-weight: 900;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider{
+    display: flex;
+    flex-direction: row;
+    width: 1118px;
+    overflow: hidden;
+}
+
+.slider_line{
+    display: flex;
+    flex-direction: row;
+    width: 2236px;
+    position: relative;
+    left: 0;
+    transition: left 0.5s ease;
+}
+
+.cake_container{
+    position: relative;
+    overflow: hidden;
+}
+.menu_cake{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 285px;
+    height: 320px;
+    margin-left: 50px;
+    margin-right: 40px;
+    border-radius: 20px;
+    background: var(--white);
+/*    box-shadow: 15px 15px 30px var(--b894a2);*/
+    transition: background 0.4s;
+}
+
+.menu_cake:hover{
+    background: var(--FFC2D0);
+}
+
+.recipe_container{
+    width: 285px;
+    height: 320px;
+    border-radius: 20px;
+    background: var(--white);
+    display: none;
+    position: absolute;
+}
+
+.recipe_hdr{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+.ingredients{
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.recipe_list{
+    padding-left: 40px;
+    list-style-type: disc;
+    line-height: 17px;
+}
+
+.information_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 70%;
+    color: var(--black) ;
+}
+
+.question{
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.recipe_btn{
+    padding-top: 30px;
+    padding-left: 250px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.order_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 70%;
+    color: var(--E71F4D);
+}
+
+.order_basket{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    position: relative;
+}
+
+.order_line{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.shopping-cart_menu{
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.order_basket:hover .order_line{
+
+    display: block;
+}
+
+.img_basket {
+    width: 25px;
+    height: 25px;
+}
+
+.cake_for_girl1{
+    width: 182px;
+    height: 158px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+
+.cake_for_girl2{
+    width: 142px;
+    height: 198px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.cake_for_girl3{
+    width: 152px;
+    height: 200px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.cake_for_girl4{
+    width: 150px;
+    height: 200px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.cake_for_girl5{
+    width: 170px;
+    height: 152px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.cake_for_girl6{
+    width: 170px;
+    height: 190px;
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+
+.cake_for_boy1{
+    width: 200px;
+    height: 181px;
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+
+.cake_for_boy2{
+    width: 165px;
+    height: 207px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.cake_for_boy3{
+    width: 220px;
+    height: 192px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cake_for_boy4{
+    width: 150px;
+    height: 219px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.cake_for_boy5{
+    width: 150px;
+    height: 225px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.cake_for_boy6{
+    width: 200px;
+    height: 213px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.cake_for_woman1{
+    width: 138px;
+    height: 200px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.cake_for_woman2{
+    width: 165px;
+    height: 207px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cake_for_woman3{
+    width: 160px;
+    height: 184px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cake_for_woman4{
+    width: 170px;
+    height: 228px;
+}
+
+.cake_for_woman5{
+    width: 170px;
+    height: 225px;
+}
+
+.cake_for_woman6{
+    width: 150px;
+    height: 209px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.cake_for_man1{
+    width: 160px;
+    height: 192px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cake_for_man2{
+    width: 200px;
+    height: 155px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.cake_for_man3{
+    width: 220px;
+    height: 192px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cake_for_man4{
+    width: 200px;
+    height: 230px;
+}
+
+.cake_for_man5{
+    width: 200px;
+    height: 177px;
+    margin-top: 27px;
+    margin-bottom: 27px;
+}
+
+.cake_for_man6{
+    width: 170px;
+    height: 216px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.wedding1{
+    width: 138px;
+    height: 200px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.wedding2{
+    width: 165px;
+    height: 207px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+.wedding3{
+    width: 220px;
+    height: 192px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.wedding4{
+    width: 150px;
+    height: 226px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.wedding5{
+    width: 170px;
+    height: 216px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.wedding6{
+    width: 200px;
+    height: 224px;
+}
+
+.thema1{
+    width: 170px;
+    height: 191px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.thema2{
+    width: 230px;
+    height: 151px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.thema3{
+    width: 160px;
+    height: 190px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.thema4{
+    width: 230px;
+    height: 153px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.thema5{
+    width: 170px;
+    height: 212px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.thema6{
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.d-none {
+    display: none;
+}
+
+/**/
+
+.choose_section .overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.0);
+    z-index: 95;
+    display: none;
+    transition: background-color .2s;
+}
+
+.choose_section .overlay.active{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cart{
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    min-height: 100vh;
+    max-height: 100vh;
+    background-color: var(--FFDFE7);
+    transition: right .2s ease-in-out;
+    z-index: 95;
+    overflow-y: auto;
+}
+
+.cart.active {
+    right: 0;
+}
+
+
+.close{
+    margin-left: 370px;
+}
+
+.close_cross{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+
+}
+
+.cat{
+    margin-left: 50px;
+    margin-top: 100px;
+    width: 300px;
+    height: 300px;
+}
+
+.nothing{
+    margin-left: 130px;
+    margin-top: 30px;
+    color: var(--E71F4D);
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.cart-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 285px;
+    height: 340px;
+    margin-left: 50px;
+    margin-right: 40px;
+    margin-top: 30px;
+    border-radius: 20px;
+    background: var(--white);
+    color: var(--E71F4D);
+    font-weight: 900;
+    /*    box-shadow: 15px 15px 30px var(--b894a2);*/
+    transition: background 0.4s;
+}
+.close_item_cross{
+    width: 20px;
+    height: 20px;
+    margin-left: 260px;
+
+}
+
+.counter_price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.counter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    height: 25px;
+    padding: 10px;
+    background: var(--F4B4C3);
+    border-radius: 30px;
+}
+
+.cart_line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control{
+    width: 30px;
+    height: 30px;
+    background: var(--FFC2D0);
+    color: var(--E71F4D);
+    font-weight: 900;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.minus{
+    padding-bottom: 4px;
+}
+
+.row{
+    padding-left: 30px;
+}
+
+.cart-total-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px 20px 50px;
+    color: var(--E71F4D);
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.btn-order{
+    width: 190px;
+    height: 45px;
+    margin: 10px 0 20px 50px;
+    border: none;
+    border-radius: 20px;
+    color: var(--white);
+    background: linear-gradient(var(--E71F4D),var(--F86486));
+    box-shadow: 10px 10px 50px var(--d1788e);
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    outline: none;
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+ /*Steps*/
+.information_section{
+    color: var(--black);
+}
+
+.steps_header{
+    padding-top: 50px;
+    padding-left: 296px;
+    background: linear-gradient(to bottom right, var(--E71F4D), 65%, var(--FFC2D0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 35px;
+}
+
+.explanation{
+    padding-top: 40px;
+    padding-left: 296px;
+    color: var(--E71F4D);
+    font-weight: 500;
+}
+
+.information_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 296px;
+    padding-right: 170px;
+    padding-top: 45px;
+}
+
+.step_container{
+    text-align: center;
+    width: 173px;
+    height: 200px;
+    border-radius: 18px;
+/*    background: linear-gradient(var(--E71F4D),var(--F86486));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+    color: var(--F86486);
+    font-size: 8px;
+    font-weight: 500;
+    transition: background 0.4s;
+}
+.step_container:hover{
+    background: linear-gradient(to left, var(--E71F4D),var(--F86486));
+    color: var(--white);
+    box-shadow: 15px 10px 30px var(--b894a2);
+}
+
+.circle{
+    padding-top: 30px;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.step{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.photo_container{
+    display: flex;
+    text-align: center;
+    padding-left: 296px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    color: var(--E71F4D);
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 14px;
+}
+
+.div_photo{
+    padding-left: 80px;
+}
+
+.photo{
+    width: 216px;
+    height: 216px;
+}
+
+/* Orders */
+.order_section{
+    display: flex;
+    padding-left: 296px;
+    background: linear-gradient(to top right, var(--F86486), 60%, var(--FFC2D0));
+}
+
+.order_header{
+    padding-top: 50px;
+}
+
+.order_header_1{
+    padding-top: 50px;
+    font-size: 15px;
+}
+
+.order_article{
+    padding-top: 30px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 15px;
+}
+.order_form{
+    padding-top: 21px;
+    padding-left: 21px;
+    position: relative;
+}
+
+.order_label_1{
+    position: absolute;
+    left: 22px;
+    top: 30px;
+}
+
+.order_img_1{
+    width: 13px;
+    height: 13px;
+}
+
+.order_label_2{
+    position: absolute;
+    left: 22px;
+    top: 80px;
+}
+
+.order_img_2{
+    width: 13px;
+    height: 13px;
+}
+
+.order_input{
+    display: block;
+    margin-bottom: 26px;
+    color: var(--white);
+    line-height: 25px;
+    background: none;
+    border-width: 0;
+    border-bottom: 1px solid var(--white);
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+    padding-left: 30px;
+
+}
+
+.order_form input:focus {
+    outline: 0;
+
+}
+
+.send{
+    width: 164px;
+    height: 36px;
+    margin-top: 5px;
+    margin-left: -20px;
+    border: none;
+    border-radius: 17px;
+    color: var(--white);
+    background: linear-gradient(var(--E71F4D),var(--F86486));
+    box-shadow: 0px 24px 44px -20px var(--E71F4D);
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    outline: none;
+    cursor: pointer;
+}
+
+.cake_order{
+    width: 556px;
+    height: 409px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 120px;
+    border: 40px solid var(--F4B4C3);
+    border-radius: 80px;
+}
+
+.cake_order_photo{
+    width: 516px;
+    height: 389px;
+}
+
+.cake_order_1{
+    width: 220px;
+    height: 281px;
+    padding-left: 72px;
+    padding-top: 1px;
+}
+.cake_order_2{
+    width: 292px;
+    height: 277px;
+    padding-top: 40px;
+}
+
 
 
 
